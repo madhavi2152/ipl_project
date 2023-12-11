@@ -8,6 +8,6 @@ function matches_per_year(matches) {
     return output;
   }, {});
 
-  return JSON.stringify(output);
+  return output;
 }
 module.exports = matches_per_year;

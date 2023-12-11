@@ -3,7 +3,7 @@ describe("problem1", () => {
   test("working good for empty object", () => {
     const ip = [];
     const ans = problem1(ip);
-    expect(ans).toEqual("{}");
+    expect(ans).toEqual({});
   });
   test("working well for null objects passes", () => {
     const ip = [null];
@@ -18,6 +18,6 @@ describe("problem1", () => {
       { season: 2015, team: "rcb" },
     ];
     const op = problem1(ip);
-    expect(op).toEqual('{"2015":1,"2017":3}');
+    expect(op).toEqual({ "2015": 1, "2017": 3 });
   });
 });
